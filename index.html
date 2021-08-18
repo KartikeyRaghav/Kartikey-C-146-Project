@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <!--Camera-->
+        <a-entity position="0 0 15">
+            <a-camera></a-camera>
+        </a-entity>
+
+        <a-sky src="background.jpg" ></a-sky>
+
+        <!--Sun-->
+        <a-entity>
+            <a-sphere position="0 5 0" radius="4" color="#0066ff"></a-sphere>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder position="0 -1 0" height="7" radius="3" color="#0066ff"></a-cylinder>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder position="-3 -6 0" height="2" radius="2.5" color="#0066ff"></a-cylinder>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder position="3 -6 0" height="2" radius="2.5" color="#0066ff"></a-cylinder>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder position="-4 1 0" height="4" radius="1" rotation="0 0 -120" color="#0066ff"></a-cylinder>
+        </a-entity>
+
+        <a-entity>
+            <a-cylinder position="4 1 0" height="4" radius="1" rotation="0 0 120" color="#0066ff"></a-cylinder>
+        </a-entity>
+
+        <!--Mercury-->
+        <!-- <a-entity position="0 0 0" rotation="0 0 0"
+            animation="property: rotation; to: 0 360 0;easing:linear; loop: true; dur: 20000">
+            <a-sphere position="1  0 -5" radius="0.2" color="grey"></a-sphere>  
+        </a-entity> -->
+        
+    </a-scene>
+</body>
+
+</html>
